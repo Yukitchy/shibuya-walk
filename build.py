@@ -53,14 +53,14 @@ COURSES = [
   links=[('Shibuya Sky (official)','https://www.shibuya-scramble-square.com/sky/'),('Bonus Track','https://bonus-track.jp/'),('Keio Inokashira line','https://www.keio.co.jp/english/')]),
  dict(id='C', chips=['All on foot','Quiet side streets','Books and coffee'], name='Shibuya, Daikanyama & Nakameguro', tag='Downhill to the river',
   why='Start in the noise, then walk 20 minutes downhill into the quiet part: the Daikanyama bookshop, then the Meguro river and its cafés. Easy pace, good for talking.',
-  steps=[('11:00','Hachiko statue, Shibuya station','We meet at the dog.'),
-         ('11:15','Scramble crossing and Shibuya Stream','Cross once, then follow the river side of the station.'),
-         ('11:45','Walk to Daikanyama','20 minutes, mostly downhill, through a residential area.'),
-         ('12:10','Daikanyama T-Site and Log Road','Tsutaya Books, three buildings of books and a lounge. Log Road is a garden path on an old rail line with a brewery.'),
-         ('13:00','Lunch','See the picks below.'),
-         ('14:15','Walk to Nakameguro','15 minutes.'),
-         ('14:30','Meguro river','The cherry-tree street. Small shops and cafés on both banks.'),
-         ('15:15','Starbucks Reserve Roastery, and done','The big four-floor one by the river. We finish at Nakameguro station.')],
+  steps=[('13:00','Hachiko statue, Shibuya station','We meet at the dog.'),
+         ('13:15','Scramble crossing and Shibuya Stream','Cross once, then follow the river side of the station.'),
+         ('13:45','Walk to Daikanyama','20 minutes, mostly downhill, through a residential area.'),
+         ('14:10','Daikanyama T-Site and Log Road','Tsutaya Books, three buildings of books and a lounge. Log Road is a garden path on an old rail line with a brewery.'),
+         ('15:00','Late lunch or coffee','See the picks below. Ivy Place serves food all afternoon.'),
+         ('15:50','Walk to Nakameguro','15 minutes.'),
+         ('16:05','Meguro river','The cherry-tree street. Small shops and cafés on both banks.'),
+         ('16:45','Starbucks Reserve Roastery, and done','The big four-floor one by the river. We finish at Nakameguro station around 17:15.')],
   stops=['Hachiko Statue Shibuya','Shibuya Stream','Daikanyama T-Site','Log Road Daikanyama','Nakameguro Station','Starbucks Reserve Roastery Tokyo'],
   moves='Everything on foot, about 4 km in total. Shibuya → Daikanyama 20 min. Daikanyama → Nakameguro 15 min. Nakameguro station has the Hibiya and Toyoko lines.',
   food=[('Ivy Place','Daikanyama · brunch','Pancakes, salads and pasta in the T-Site garden. Weekend queue, so we put our name down first.','Ivy Place Daikanyama'),
@@ -113,6 +113,7 @@ HERO_CSS = """
 .slides:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08) 30%,rgba(0,0,0,.74))}
 .hcap{position:relative;z-index:1;min-height:62vh;max-height:600px;display:flex;flex-direction:column;justify-content:flex-end;padding-top:48px;padding-bottom:22px}
 .hcap .kicker{color:#9ee3b8}
+.fixed{position:relative;z-index:1;display:inline-block;align-self:flex-start;font-size:13.5px;font-weight:600;color:#fff;background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:8px 15px;margin:0 0 14px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .hcap h1{color:#fff;margin:0 0 14px;text-shadow:0 2px 14px rgba(0,0,0,.3)}
 .snav{display:flex;align-items:center;gap:10px}
 .slabel{font:inherit;font-size:12.5px;font-weight:600;color:#fff;background:rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:7px 13px;cursor:pointer;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -245,27 +246,28 @@ footer.wrap{{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:
 <header class="hero">
 <div class="hpic"><div class="slides">{''.join(f'<img src="{PH[c["id"]]["card"]["thumb"]}" alt="{html.escape(c["name"])}" data-course="{c["id"]}" data-name="{html.escape(c["name"])}">' for c in COURSES)}</div>
 <div class="wrap hcap">
-<p class="kicker">Tokyo · October 8–20</p>
+<p class="kicker">Tokyo · Friday, October 9</p>
 <h1>Shibuya, <span class="nb">three ways.</span></h1>
+<p class="fixed">Confirmed: course C, Friday October 9, 13:00 at the Hachiko statue.</p>
 <div class="snav"><button class="slabel" type="button"></button><div class="dots">{''.join(f'<button type="button" aria-label="Show course {c["id"]}"></button>' for c in COURSES)}</div></div>
 </div></div>
 <div class="wrap hbody">
-<p>About four hours on foot, starting at the Hachiko statue. Pick one, and tell me the day.</p>
-<ul class="facts"><li><b>With</b> Yuuki</li><li><b>Time</b> about 4 hours, 11:00–15:00 or later</li><li><b>Days I can do</b> Sat Oct 10, Fri Oct 9 pm, Thu Oct 8 pm</li><li><b>Start</b> Hachiko statue, Shibuya</li></ul>
+<p>About four hours on foot, all the way down to the Meguro river. Courses A and B stay on this page if you want to swap.</p>
+<ul class="facts"><li><b>With</b> Yuuki</li><li><b>Day</b> Friday, October 9</li><li><b>Time</b> 13:00 to about 17:15</li><li><b>Start</b> Hachiko statue, Shibuya</li></ul>
 </div>
 </header>
 <div class="wrap">
-<div class="sechead"><span class="n">1</span><div><b>Pick a course</b> <span>Tap one to see the plan, the route and where we eat.</span></div></div>
+<div class="sechead"><span class="n">1</span><div><b>The plan</b> <span>Course C is the one we are doing. Tap any card to see the plan, the route and where we eat.</span></div></div>
 <div class="menu">{''.join(menu(c) for c in COURSES)}</div>
 {''.join(detail(c) for c in COURSES)}
 <div class="sechead"><span class="n">2</span><div><b>Where we meet</b> <span>Hachiko statue, Hachiko exit of Shibuya station.</span></div></div>
 <div class="arrival">
 <div><p>Every train line stops at Shibuya, so the statue is the easiest place to find each other.</p>
-<p class="hint">If your hotel is near Shibuya, tell me the name and I will come to the lobby instead. The 11:00 start can move later if you have a morning meeting.</p></div>
+<p class="hint">If your hotel is near Shibuya, tell me the name and I will come to the lobby instead. The 13:00 start can move if your morning runs long.</p></div>
 <div class="mapbox"><iframe src="{emb('Hachiko Statue Shibuya')}" loading="lazy" title="Hachiko statue, Shibuya" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </div>
 </div>
-<footer class="wrap"><p>Reply to Yuuki with A, B or C and the day. Times are approximate and can move on the day.</p>
+<footer class="wrap"><p>Times are approximate and can move on the day. Message Yuuki if you want to change anything.</p>
 <details class="cred"><summary>Photo credits</summary><p>{credits}, via Wikimedia Commons.</p></details></footer>
 <script>
 (function(){{
@@ -282,7 +284,7 @@ footer.wrap{{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:
    requestAnimationFrame(function(){{d.classList.add('open');point(id)}});
    document.querySelector('.mcard[data-course="'+id+'"]').setAttribute('aria-expanded','true')}}
  window.addEventListener('resize',function(){{var o=document.querySelector('.mcard[aria-expanded=true]');if(o)point(o.dataset.course)}});
- var want=(location.hash.match(/^#detail-([ABC])$/)||[])[1]||(location.search.match(/[?&]open=([ABC])/)||[])[1];
+ var want=(location.hash.match(/^#detail-([ABC])$/)||[])[1]||(location.search.match(/[?&]open=([ABC])/)||[])[1]||'C';
  if(want){{open_(want);setTimeout(function(){{document.getElementById('detail-'+want).scrollIntoView()}},80)}}
  cards.forEach(function(b){{
   b.addEventListener('click',function(){{
