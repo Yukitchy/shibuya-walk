@@ -31,8 +31,8 @@ COURSES = [
   food=[('Ivy Place','Daikanyama · brunch','Pancakes, salads and pasta in the T-Site garden. Weekend queue, so we put our name down first.','Ivy Place Daikanyama'),
         ('Spring Valley Brewery Tokyo','Daikanyama · craft beer','Kirin’s brewery restaurant on Log Road. Beer flight and a proper lunch.','Spring Valley Brewery Tokyo Daikanyama'),
         ('Onibus Coffee Nakameguro','Nakameguro · coffee','Small roaster next to the tracks. Standing room, good beans.','Onibus Coffee Nakameguro')],
-  good='The least crowded option. Flat and easy. Good if you want time to talk business.',
-  mind='The Meguro river cherry trees are green in October, not pink. Ivy Place can be a 30-minute wait on Saturday.',
+  good='Flat and easy the whole way, on quiet streets. Plenty of time to talk.',
+  mind='The Meguro river cherry trees are green in October, not pink. Ivy Place can have a short wait, so we put our name down when we arrive.',
   links=[('Daikanyama T-Site','https://store.tsite.jp/daikanyama/english/'),('Log Road Daikanyama','https://www.logroad-daikanyama.jp/'),('Starbucks Reserve Roastery Tokyo','https://www.starbucks.co.jp/reserve/roastery/')]),
 ]
 
