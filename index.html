@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shibuya, three ways: a walk with Yuuki</title><meta name="robots" content="noindex">
+<title>Shibuya, Daikanyama &amp; Nakameguro: Friday October 9</title><meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fffdf6;--card:#fff;--ink:#111;--mute:#767065;--line:#eae4d6;--acc:#1a5c3a;--r:10px}
@@ -7,7 +7,7 @@
 body{margin:0;font-family:Inter,-apple-system,"Hiragino Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 .kicker{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin:0 0 10px}
-h1,h2,.mt{text-wrap:balance} .nb{white-space:nowrap}
+h1,h2{text-wrap:balance} .nb{white-space:nowrap}
 h1{font-weight:800;font-size:clamp(34px,5.4vw,54px);line-height:1.06;letter-spacing:-.025em;margin:0 0 16px}
 h2{font-weight:800;font-size:clamp(30px,4.2vw,42px);line-height:1.06;letter-spacing:-.025em;margin:0}
 h3{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin:0 0 12px}
@@ -22,8 +22,7 @@ h3{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
 .fixed{position:relative;z-index:1;display:inline-block;align-self:flex-start;font-size:13.5px;font-weight:600;color:#fff;background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:8px 15px;margin:0 0 14px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .hcap h1{color:#fff;margin:0 0 14px;text-shadow:0 2px 14px rgba(0,0,0,.3)}
 .snav{display:flex;align-items:center;gap:10px}
-.slabel{font:inherit;font-size:12.5px;font-weight:600;color:#fff;background:rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:7px 13px;cursor:pointer;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.dots{display:flex;gap:7px;margin-left:auto;flex:none}
+.dots{display:flex;gap:7px;flex:none}
 .dots button{width:9px;height:9px;padding:0;border:none;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer}
 .dots button.on{background:#fff}
 .hbody{padding-top:22px;padding-bottom:26px}
@@ -34,33 +33,11 @@ header p{font-size:18px;color:var(--mute);margin:0;max-width:620px}
 .sechead{display:flex;align-items:baseline;gap:14px;padding:26px 0 16px;border-top:1px solid var(--line)}
 .sechead .n{font-weight:800;font-size:26px;line-height:1;letter-spacing:-.02em;color:var(--acc)}
 .sechead b{font-size:19px;font-weight:600} .sechead span{font-size:14px;color:var(--mute)}
-.menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.mcard{display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;padding:0;cursor:pointer;transition:transform .18s,box-shadow .18s,border-color .18s}
-.mcard:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(34,31,27,.10)}
-.menu.picked .mcard:not([aria-expanded=true]){opacity:.42;filter:saturate(.45)}
-.menu.picked .mcard:not([aria-expanded=true]):hover{opacity:.75;filter:none}
-.mcard[aria-expanded=true]{border:2px solid var(--ink);box-shadow:0 12px 28px rgba(17,17,17,.16);transform:translateY(-3px)}
-.mcard[aria-expanded=true] .mopen{color:var(--acc);border-bottom-color:var(--acc)}
-.mcard>img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#f0ebe0}
-.mb{display:flex;flex-direction:column;flex:1;padding:18px 20px 20px}
-.mk{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
-.mt{display:block;font-weight:800;font-size:26px;line-height:1.12;letter-spacing:-.025em;margin-bottom:6px}
-.mtag{display:block;font-size:15px;color:var(--mute);margin-bottom:12px}
-.mch{list-style:none;margin:auto 0 14px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
-.mch li{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:4px;padding:3px 8px;color:var(--mute)}
-.mopen{align-self:flex-start;display:inline-block;font-size:14px;font-weight:600;border-bottom:2px solid var(--acc);padding-bottom:1px}
-.mcard[aria-expanded=true] .mopen::after{content:" ▲"} .mcard[aria-expanded=false] .mopen::after{content:" ▾"}
-.detail{scroll-margin-top:12px;display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s ease;margin-top:14px;position:relative}
-.detail[hidden]{display:none} .detail.open{grid-template-rows:1fr}
-.dwrap{overflow:hidden;min-height:0;background:var(--card);border:2px solid var(--ink);border-radius:var(--r);position:relative}
-.detail::before{content:'';position:absolute;top:-11px;left:var(--arrow,50%);width:20px;height:20px;margin-left:-10px;background:var(--acc);border-left:2px solid var(--acc);border-top:2px solid var(--acc);transform:rotate(45deg);z-index:2;opacity:0;transition:opacity .2s .12s}
-.detail.open::before{opacity:1}
+.detail{margin-top:0;position:relative}
+.dwrap{background:var(--card);border:2px solid var(--ink);border-radius:var(--r);position:relative}
 .dtop{height:5px;background:var(--acc)}
-.detail.open .dwrap{overflow:visible}
 .dwrap>*{margin-left:26px;margin-right:26px} .dwrap>.dtop{margin:0} .dwrap>.photos{margin-left:26px;margin-right:26px}
-.dhead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding-top:26px}
-.dclose{flex:none;font:inherit;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);background:none;border:1px solid var(--line);border-radius:6px;padding:8px 14px;cursor:pointer}
-.dclose:hover{color:var(--ink);border-color:var(--ink)}
+.dhead{padding-top:26px}
 .why{font-size:17px;color:var(--mute);margin:10px 0 20px;max-width:640px}
 .photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:26px}
 .photos img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;background:#f0ebe0}
@@ -80,7 +57,6 @@ header p{font-size:18px;color:var(--mute);margin:0;max-width:620px}
 .eb>span{display:block;font-size:14px;color:var(--mute)} .eat i{display:block;font-style:normal;font-size:12px;margin-top:auto;padding-top:10px;text-decoration:underline;text-underline-offset:3px}
 .notes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;font-size:14px} .notes p{margin:0;padding:16px 18px;background:var(--bg);border:1px solid var(--line);border-radius:8px} .notes b{display:block;font-weight:600;margin-bottom:3px}
 .links{margin:0 0 22px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px 18px} .links a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
-.choose{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:16px 32px;border-radius:8px;font-size:16px;letter-spacing:-.01em;margin-bottom:28px} .choose:hover{background:#333}
 .arrival{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start;padding-bottom:40px}
 .arrival p{margin:0 0 10px;font-size:16px} .arrival .hint{color:var(--mute);font-size:15px}
 .arrival .mapbox iframe{height:260px}
@@ -88,7 +64,6 @@ footer.wrap{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:1
 .cred summary{cursor:pointer;font-size:12px;color:var(--mute);opacity:.75;list-style:none;display:inline-block;text-decoration:underline;text-underline-offset:3px}
 .cred summary::-webkit-details-marker{display:none} .cred p{margin:8px 0 0;font-size:11.5px;line-height:1.6;opacity:.8}
 @media(max-width:820px){
- .menu{grid-template-columns:1fr} .mcard>img{aspect-ratio:16/9}
  .dgrid,.eats,.notes,.arrival,.photos{grid-template-columns:1fr}
  .dwrap>*{margin-left:18px;margin-right:18px} .mapbox iframe{height:230px}
 }
@@ -102,10 +77,6 @@ footer.wrap{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:1
  .sechead{display:block;padding:22px 0 12px}
  .sechead .n{font-size:20px;margin-right:8px;display:inline}
  .sechead b{font-size:17px} .sechead span{display:block;font-size:13px;line-height:1.5;margin-top:2px}
- .menu{gap:12px}
- .mb{padding:15px 16px 16px} .mt{font-size:23px;line-height:1.15} .mtag{font-size:14px;margin-bottom:10px}
- .mch{gap:5px;margin-bottom:12px} .mch li{font-size:10.5px;padding:2px 7px}
- .mopen{font-size:13.5px}
  h2{font-size:26px;line-height:1.12}
  .dhead{padding-top:20px} .why{font-size:15.5px;line-height:1.55;margin:8px 0 16px}
  .dwrap>*{margin-left:16px;margin-right:16px}
@@ -116,68 +87,28 @@ footer.wrap{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:1
  .eats{gap:10px;margin-bottom:20px} .eat>img{aspect-ratio:16/9} .eb{padding:12px 14px 14px}
  .notes{gap:10px;margin-bottom:16px} .notes p{padding:14px 16px;font-size:13.5px}
  .links{font-size:13.5px;gap:4px 14px;margin-bottom:18px}
- .choose{display:block;text-align:center;padding:15px 0;margin-bottom:22px}
  .arrival{gap:16px;padding-bottom:32px} .arrival p{font-size:15.5px;line-height:1.55} .arrival .hint{font-size:14px}
  .mapbox iframe{height:210px}
  footer.wrap{padding:20px 18px 44px;font-size:11.5px;line-height:1.55}
 }
 </style></head><body>
 <header class="hero">
-<div class="hpic"><div class="slides"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cruce_de_Shibuya_%281328726246%29.jpg/960px-Cruce_de_Shibuya_%281328726246%29.jpg" alt="Shibuya &amp; Harajuku" data-course="A" data-name="Shibuya &amp; Harajuku"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Shibuya_Scramble_Square_SHIBUYA_SKY_%2853443446821%29.jpg/960px-Shibuya_Scramble_Square_SHIBUYA_SKY_%2853443446821%29.jpg" alt="Shibuya &amp; Shimokitazawa" data-course="B" data-name="Shibuya &amp; Shimokitazawa"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Tsutaya-1.JPG/960px-Tsutaya-1.JPG" alt="Shibuya, Daikanyama &amp; Nakameguro" data-course="C" data-name="Shibuya, Daikanyama &amp; Nakameguro"></div>
+<div class="hpic"><div class="slides"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Tsutaya-1.JPG/960px-Tsutaya-1.JPG" alt="Tsutaya-1.JPG"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Daikanyama_T-Site_%2852501800624%29.jpg/960px-Daikanyama_T-Site_%2852501800624%29.jpg" alt="Daikanyama T-Site (52501800624).jpg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg/960px-De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg" alt="De Meguro in Nakameguro 2-chōme, stroomafwaarts gezien vanaf de Nakamekōen-brug, -13 augustus 2018 a.jpg"></div>
 <div class="wrap hcap">
 <p class="kicker">Tokyo · Friday, October 9</p>
-<h1>Shibuya, <span class="nb">three ways.</span></h1>
-<p class="fixed">Confirmed: course C, Friday October 9, 13:00 at the Hachiko statue.</p>
-<div class="snav"><button class="slabel" type="button"></button><div class="dots"><button type="button" aria-label="Show course A"></button><button type="button" aria-label="Show course B"></button><button type="button" aria-label="Show course C"></button></div></div>
+<h1>Downhill to <span class="nb">the river.</span></h1>
+<p class="fixed">Friday October 9, 13:00 at the Hachiko statue.</p>
+<div class="snav"><div class="dots"><button type="button" aria-label="Photo 1"></button><button type="button" aria-label="Photo 2"></button><button type="button" aria-label="Photo 3"></button></div></div>
 </div></div>
 <div class="wrap hbody">
-<p>About four hours on foot, all the way down to the Meguro river. Courses A and B stay on this page if you want to swap.</p>
+<p>About four hours on foot, from the crossing down to the Meguro river.</p>
 <ul class="facts"><li><b>With</b> Yuuki</li><li><b>Day</b> Friday, October 9</li><li><b>Time</b> 13:00 to about 17:15</li><li><b>Start</b> Hachiko statue, Shibuya</li></ul>
 </div>
 </header>
 <div class="wrap">
-<div class="sechead"><span class="n">1</span><div><b>The plan</b> <span>Course C is the one we are doing. Tap any card to see the plan, the route and where we eat.</span></div></div>
-<div class="menu"><button class="mcard" type="button" data-course="A" aria-expanded="false" aria-controls="detail-A">
-<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cruce_de_Shibuya_%281328726246%29.jpg/960px-Cruce_de_Shibuya_%281328726246%29.jpg" alt="Cruce de Shibuya (1328726246).jpg" loading="lazy">
-<span class="mb"><span class="mk">Course A</span><span class="mt">Shibuya &amp; Harajuku</span>
-<span class="mtag">The walk your clients ask for</span><ul class="mch"><li>No tickets</li><li>Games and shops</li><li>Ends at a shrine</li></ul><span class="mopen">See the plan</span></span></button><button class="mcard" type="button" data-course="B" aria-expanded="false" aria-controls="detail-B">
-<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Shibuya_Scramble_Square_SHIBUYA_SKY_%2853443446821%29.jpg/960px-Shibuya_Scramble_Square_SHIBUYA_SKY_%2853443446821%29.jpg" alt="Shibuya Scramble Square SHIBUYA SKY (53443446821).jpg" loading="lazy">
-<span class="mb"><span class="mk">Course B</span><span class="mt">Shibuya &amp; Shimokitazawa</span>
-<span class="mtag">The view, then the small-town side</span><ul class="mch"><li>Rooftop view</li><li>4 minutes by train</li><li>Vintage and curry</li></ul><span class="mopen">See the plan</span></span></button><button class="mcard" type="button" data-course="C" aria-expanded="false" aria-controls="detail-C">
-<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Tsutaya-1.JPG/960px-Tsutaya-1.JPG" alt="Tsutaya-1.JPG" loading="lazy">
-<span class="mb"><span class="mk">Course C</span><span class="mt">Shibuya, Daikanyama &amp; Nakameguro</span>
-<span class="mtag">Downhill to the river</span><ul class="mch"><li>All on foot</li><li>Quiet side streets</li><li>Books and coffee</li></ul><span class="mopen">See the plan</span></span></button></div>
-<section class="detail" id="detail-A" hidden><div class="dwrap"><div class="dtop"></div>
-<div class="dhead"><div><p class="kicker">Course A · The walk your clients ask for</p><h2>Shibuya &amp; Harajuku</h2></div>
-<button class="dclose" type="button" aria-label="Close">Close ✕</button></div>
-<p class="why">The crossing, the rooftop park, the Nintendo and Pokémon shops, then a back street to Harajuku and a forest walk at the end. You see it the way a guest would.</p>
-<div class="photos"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Pok%C3%A9mon_Center_Shibuya_%2852506444605%29.jpg/960px-Pok%C3%A9mon_Center_Shibuya_%2852506444605%29.jpg" alt="Pokémon Center Shibuya (52506444605).jpg" loading="lazy"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Takeshita_Street%2C_Harajuku_%2811920450906%29.jpg/960px-Takeshita_Street%2C_Harajuku_%2811920450906%29.jpg" alt="Takeshita Street, Harajuku (11920450906).jpg" loading="lazy"></div>
-<div class="dgrid">
-<div><h3>The day</h3><ol class="steps"><li><b>11:00</b><div><strong>Hachiko statue, Shibuya station</strong><span>We meet at the dog.</span></div></li><li><b>11:10</b><div><strong>Scramble crossing</strong><span>Cross it once, then watch it from the rooftop of MAGNET by SHIBUYA109 across the street.</span></div></li><li><b>11:40</b><div><strong>Miyashita Park</strong><span>A park on the roof of a mall. Skate park, climbing wall, and Shibuya Yokocho food alley underneath.</span></div></li><li><b>12:15</b><div><strong>Shibuya PARCO, 6th floor</strong><span>Nintendo TOKYO, Pokémon Center Shibuya, CAPCOM Store and the Jump Shop on one floor.</span></div></li><li><b>13:15</b><div><strong>Lunch</strong><span>See the three picks below.</span></div></li><li><b>14:00</b><div><strong>Cat Street to Harajuku</strong><span>A 15-minute walk on a quiet street of small shops.</span></div></li><li><b>14:30</b><div><strong>Takeshita street</strong><span>The crowded one. Crepes, character shops, photo booths.</span></div></li><li><b>15:00</b><div><strong>Meiji Jingu</strong><span>Forest walk to the shrine and back. We finish at Harajuku station around 15:45.</span></div></li></ol></div>
-<div><h3>The route</h3><div class="mapbox"><iframe src="https://maps.google.com/maps?saddr=Hachiko+Statue+Shibuya&daddr=Shibuya+Scramble+Crossing+to:Miyashita+Park+Shibuya+to:Shibuya+PARCO+to:Cat+Street+Harajuku+to:Takeshita+Street+Harajuku+to:Meiji+Jingu+Shrine&output=embed" loading="lazy" title="Route for course A" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-<p class="moves">Everything on foot. Shibuya station → PARCO 10 min. PARCO → Harajuku 15 min. Harajuku station has the JR Yamanote line back. <a href="https://www.google.com/maps/dir/?api=1&origin=Hachiko+Statue+Shibuya&destination=Meiji+Jingu+Shrine&waypoints=Shibuya+Scramble+Crossing%7CMiyashita+Park+Shibuya%7CShibuya+PARCO%7CCat+Street+Harajuku%7CTakeshita+Street+Harajuku&travelmode=transit" target="_blank" rel="noopener">Open the route in Google Maps ↗</a></p></div>
-</div>
-<h3>Where we eat</h3><div class="eats"><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Uobei+Shibuya+Dogenzaka" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/010_Sushi_master_in_Kyoto%2C_Japan_-_sushi_chef_%E5%AF%BF%E5%8F%B8%E8%81%B7%E4%BA%BA.jpg/960px-010_Sushi_master_in_Kyoto%2C_Japan_-_sushi_chef_%E5%AF%BF%E5%8F%B8%E8%81%B7%E4%BA%BA.jpg" alt="010 Sushi master in Kyoto, Japan - sushi chef 寿司職人.jpg" loading="lazy"><span class="eb"><strong>Uobei Shibuya Dogenzaka</strong><em>Shibuya · conveyor sushi</em><span>Order on a tablet, plates arrive on a rail. About 15 minutes, 1,500 yen.</span><i>Open in Google Maps ↗</i></span></a><a class="eat" href="https://www.google.com/maps/search/?api=1&query=AFURI+Harajuku" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Tenraiken-Kamiyacho-Honten-2024-05-24_005.jpg/960px-Tenraiken-Kamiyacho-Honten-2024-05-24_005.jpg" alt="Tenraiken-Kamiyacho-Honten-2024-05-24 005.jpg" loading="lazy"><span class="eb"><strong>AFURI Harajuku</strong><em>Harajuku · yuzu ramen</em><span>Light ramen with yuzu citrus. Counter seats, quick.</span><i>Open in Google Maps ↗</i></span></a><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Marion+Crepes+Takeshita+Street+Harajuku" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Marion_Cr%C3%AApes_in_Harajuku_Takeshita_2.jpg/960px-Marion_Cr%C3%AApes_in_Harajuku_Takeshita_2.jpg" alt="Marion Crêpes in Harajuku Takeshita 2.jpg" loading="lazy"><span class="eb"><strong>Marion Crepes</strong><em>Takeshita street · crepes</em><span>The original Harajuku crepe stand. Eaten while walking.</span><i>Open in Google Maps ↗</i></span></a></div>
-<div class="notes"><p><b>Good for</b> No tickets. Easy to cut short. This is the standard Shibuya day, so it is useful to have walked it yourself.</p><p><b>Keep in mind</b> Takeshita street is crowded after noon on Saturday. The PARCO shops are busy but the queues move.</p></div>
-<p class="links"><a href="https://www.nintendo.com/jp/officialstore/" target="_blank" rel="noopener">Nintendo TOKYO ↗</a> <a href="https://www.pokemon.co.jp/shop/pokecen/shibuya/" target="_blank" rel="noopener">Pokémon Center Shibuya ↗</a> <a href="https://www.meijijingu.or.jp/en/" target="_blank" rel="noopener">Meiji Jingu (official) ↗</a></p>
-<a class="choose" href="mailto:icchan417@gmail.com?subject=Shibuya walk: course A (Shibuya &amp; Harajuku)">Choose course A</a>
-</div></section><section class="detail" id="detail-B" hidden><div class="dwrap"><div class="dtop"></div>
-<div class="dhead"><div><p class="kicker">Course B · The view, then the small-town side</p><h2>Shibuya &amp; Shimokitazawa</h2></div>
-<button class="dclose" type="button" aria-label="Close">Close ✕</button></div>
-<p class="why">Shibuya from 230 metres up, then one short train ride to Shimokitazawa, where Tokyo people go on weekends. Vintage shops, small theatres, curry.</p>
-<div class="photos"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Shibuya_Scramble_Square_SHIBUYA_SKY_%2853137572352%29.jpg/960px-Shibuya_Scramble_Square_SHIBUYA_SKY_%2853137572352%29.jpg" alt="Shibuya Scramble Square SHIBUYA SKY (53137572352).jpg" loading="lazy"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Shimokitazawa_Street_%2820260227194844%29.jpg/960px-Shimokitazawa_Street_%2820260227194844%29.jpg" alt="Shimokitazawa Street (20260227194844).jpg" loading="lazy"></div>
-<div class="dgrid">
-<div><h3>The day</h3><ol class="steps"><li><b>11:00</b><div><strong>Hachiko statue, Shibuya station</strong><span>We meet at the dog.</span></div></li><li><b>11:15</b><div><strong>Shibuya Sky</strong><span>Open rooftop on top of Scramble Square. About 45 minutes. I book the timed ticket.</span></div></li><li><b>12:15</b><div><strong>Scramble crossing and Shibuya Stream</strong><span>Cross at street level, then a short walk along the river side of the station.</span></div></li><li><b>12:45</b><div><strong>Keio Inokashira line to Shimokitazawa</strong><span>Two stops, 4 minutes.</span></div></li><li><b>13:00</b><div><strong>Lunch</strong><span>Curry is the local dish here. See the picks below.</span></div></li><li><b>14:00</b><div><strong>Shimokitazawa streets</strong><span>Vintage shops, record shops and Bonus Track, a row of small shops on the old rail line.</span></div></li><li><b>15:00</b><div><strong>Coffee, and done</strong><span>We finish at Shimokitazawa station. Shibuya is 4 minutes, Shinjuku 10.</span></div></li></ol></div>
-<div><h3>The route</h3><div class="mapbox"><iframe src="https://maps.google.com/maps?saddr=Hachiko+Statue+Shibuya&daddr=Shibuya+Sky+to:Shibuya+Stream+to:Shimokitazawa+Station+to:Bonus+Track+Shimokitazawa&output=embed" loading="lazy" title="Route for course B" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-<p class="moves">Shibuya on foot. Shibuya → Shimokitazawa 4 min on the Keio Inokashira line. Shimokitazawa → Shibuya or Shinjuku 4 to 10 min. <a href="https://www.google.com/maps/dir/?api=1&origin=Hachiko+Statue+Shibuya&destination=Bonus+Track+Shimokitazawa&waypoints=Shibuya+Sky%7CShibuya+Stream%7CShimokitazawa+Station&travelmode=transit" target="_blank" rel="noopener">Open the route in Google Maps ↗</a></p></div>
-</div>
-<h3>Where we eat</h3><div class="eats"><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Rojiura+Curry+Samurai+Shimokitazawa" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Galaxy-A53-5G_Food-Photos_007.jpg/960px-Galaxy-A53-5G_Food-Photos_007.jpg" alt="Galaxy-A53-5G Food-Photos 007.jpg" loading="lazy"><span class="eb"><strong>Rojiura Curry SAMURAI</strong><em>Shimokitazawa · soup curry</em><span>Hokkaido-style soup curry with a plate of vegetables. The Shimokita branch is the busy one.</span><i>Open in Google Maps ↗</i></span></a><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Curry+Spice+Gelateria+KALPASI" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Japanese_curry_rice_in_Ho_Chi_Minh_City_%2823973213292%29.jpg/960px-Japanese_curry_rice_in_Ho_Chi_Minh_City_%2823973213292%29.jpg" alt="Japanese curry rice in Ho Chi Minh City (23973213292).jpg" loading="lazy"><span class="eb"><strong>Curry Spice Gelateria KALPASI</strong><em>Shimokitazawa · spice curry</em><span>Small counter, two or three curries on one plate, gelato after.</span><i>Open in Google Maps ↗</i></span></a><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Bear+Pond+Espresso+Shimokitazawa" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/500px_photo_%28187402459%29.jpeg/960px-500px_photo_%28187402459%29.jpeg" alt="500px photo (187402459).jpeg" loading="lazy"><span class="eb"><strong>Bear Pond Espresso</strong><em>Shimokitazawa · coffee</em><span>Tiny espresso bar, known in Tokyo. Cash only, no photos inside.</span><i>Open in Google Maps ↗</i></span></a></div>
-<div class="notes"><p><b>Good for</b> Two different sides of Tokyo in one afternoon. Best if you want to see where locals shop and eat.</p><p><b>Keep in mind</b> Shibuya Sky needs a timed ticket, about 2,500 yen, booked online. Windy on the roof.</p></div>
-<p class="links"><a href="https://www.shibuya-scramble-square.com/sky/" target="_blank" rel="noopener">Shibuya Sky (official) ↗</a> <a href="https://bonus-track.jp/" target="_blank" rel="noopener">Bonus Track ↗</a> <a href="https://www.keio.co.jp/english/" target="_blank" rel="noopener">Keio Inokashira line ↗</a></p>
-<a class="choose" href="mailto:icchan417@gmail.com?subject=Shibuya walk: course B (Shibuya &amp; Shimokitazawa)">Choose course B</a>
-</div></section><section class="detail" id="detail-C" hidden><div class="dwrap"><div class="dtop"></div>
-<div class="dhead"><div><p class="kicker">Course C · Downhill to the river</p><h2>Shibuya, Daikanyama &amp; Nakameguro</h2></div>
-<button class="dclose" type="button" aria-label="Close">Close ✕</button></div>
+<div class="sechead"><span class="n">1</span><div><b>The plan</b> <span>Friday October 9, 13:00 to about 17:15.</span></div></div>
+<section class="detail" id="detail-C"><div class="dwrap"><div class="dtop"></div>
+<div class="dhead"><div><p class="kicker">Downhill to the river</p><h2>Shibuya, Daikanyama &amp; Nakameguro</h2></div></div>
 <p class="why">Start in the noise, then walk 20 minutes downhill into the quiet part: the Daikanyama bookshop, then the Meguro river and its cafés. Easy pace, good for talking.</p>
 <div class="photos"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Daikanyama_T-Site_%2852501800624%29.jpg/960px-Daikanyama_T-Site_%2852501800624%29.jpg" alt="Daikanyama T-Site (52501800624).jpg" loading="lazy"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg/960px-De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg" alt="De Meguro in Nakameguro 2-chōme, stroomafwaarts gezien vanaf de Nakamekōen-brug, -13 augustus 2018 a.jpg" loading="lazy"></div>
 <div class="dgrid">
@@ -188,7 +119,6 @@ footer.wrap{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:1
 <h3>Where we eat</h3><div class="eats"><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Ivy+Place+Daikanyama" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/1_Chome_Komachi%2C_Kamakura-shi%2C_Kanagawa-ken_248-0006%2C_Japan_-_panoramio_%281%29.jpg/960px-1_Chome_Komachi%2C_Kamakura-shi%2C_Kanagawa-ken_248-0006%2C_Japan_-_panoramio_%281%29.jpg" alt="1 Chome Komachi, Kamakura-shi, Kanagawa-ken 248-0006, Japan - panoramio (1).jpg" loading="lazy"><span class="eb"><strong>Ivy Place</strong><em>Daikanyama · brunch</em><span>Pancakes, salads and pasta in the T-Site garden. Weekend queue, so we put our name down first.</span><i>Open in Google Maps ↗</i></span></a><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Spring+Valley+Brewery+Tokyo+Daikanyama" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Sony_Building-4h.jpg/960px-Sony_Building-4h.jpg" alt="Sony Building-4h.jpg" loading="lazy"><span class="eb"><strong>Spring Valley Brewery Tokyo</strong><em>Daikanyama · craft beer</em><span>Kirin’s brewery restaurant on Log Road. Beer flight and a proper lunch.</span><i>Open in Google Maps ↗</i></span></a><a class="eat" href="https://www.google.com/maps/search/?api=1&query=Onibus+Coffee+Nakameguro" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/A_hand_reaches_for_a_cup_of_coffee.jpg/960px-A_hand_reaches_for_a_cup_of_coffee.jpg" alt="A hand reaches for a cup of coffee.jpg" loading="lazy"><span class="eb"><strong>Onibus Coffee Nakameguro</strong><em>Nakameguro · coffee</em><span>Small roaster next to the tracks. Standing room, good beans.</span><i>Open in Google Maps ↗</i></span></a></div>
 <div class="notes"><p><b>Good for</b> The least crowded option. Flat and easy. Good if you want time to talk business.</p><p><b>Keep in mind</b> The Meguro river cherry trees are green in October, not pink. Ivy Place can be a 30-minute wait on Saturday.</p></div>
 <p class="links"><a href="https://store.tsite.jp/daikanyama/english/" target="_blank" rel="noopener">Daikanyama T-Site ↗</a> <a href="https://www.logroad-daikanyama.jp/" target="_blank" rel="noopener">Log Road Daikanyama ↗</a> <a href="https://www.starbucks.co.jp/reserve/roastery/" target="_blank" rel="noopener">Starbucks Reserve Roastery Tokyo ↗</a></p>
-<a class="choose" href="mailto:icchan417@gmail.com?subject=Shibuya walk: course C (Shibuya, Daikanyama &amp; Nakameguro)">Choose course C</a>
 </div></section>
 <div class="sechead"><span class="n">2</span><div><b>Where we meet</b> <span>Hachiko statue, Hachiko exit of Shibuya station.</span></div></div>
 <div class="arrival">
@@ -198,46 +128,14 @@ footer.wrap{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:1
 </div>
 </div>
 <footer class="wrap"><p>Times are approximate and can move on the day. Message Yuuki if you want to change anything.</p>
-<details class="cred"><summary>Photo credits</summary><p>Cruce de Shibuya (1328726246).jpg (CC BY 2.0); Pokémon Center Shibuya (52506444605).jpg (CC BY 2.0); Takeshita Street, Harajuku (11920450906).jpg (CC BY 2.0); 010 Sushi master in Kyoto, Japan - sushi chef 寿司職人.jpg (CC BY 3.0); Tenraiken-Kamiyacho-Honten-2024-05-24 005.jpg (CC BY 4.0); Marion Crêpes in Harajuku Takeshita 2.jpg (CC0); Shibuya Scramble Square SHIBUYA SKY (53443446821).jpg (CC BY 2.0); Shibuya Scramble Square SHIBUYA SKY (53137572352).jpg (CC BY 2.0); Shimokitazawa Street (20260227194844).jpg (CC BY-SA 4.0); Galaxy-A53-5G Food-Photos 007.jpg (CC BY 4.0); Japanese curry rice in Ho Chi Minh City (23973213292).jpg (CC BY-SA 2.0); 500px photo (187402459).jpeg (CC BY 3.0); Tsutaya-1.JPG (CC BY-SA 3.0); Daikanyama T-Site (52501800624).jpg (CC BY 2.0); De Meguro in Nakameguro 2-chōme, stroomafwaarts gezien vanaf de Nakamekōen-brug, -13 augustus 2018 a.jpg (CC BY-SA 2.1 jp); 1 Chome Komachi, Kamakura-shi, Kanagawa-ken 248-0006, Japan - panoramio (1).jpg (CC BY 3.0); Sony Building-4h.jpg (CC BY-SA 4.0); A hand reaches for a cup of coffee.jpg (CC BY 2.0), via Wikimedia Commons.</p></details></footer>
+<details class="cred"><summary>Photo credits</summary><p>Tsutaya-1.JPG (CC BY-SA 3.0); Daikanyama T-Site (52501800624).jpg (CC BY 2.0); De Meguro in Nakameguro 2-chōme, stroomafwaarts gezien vanaf de Nakamekōen-brug, -13 augustus 2018 a.jpg (CC BY-SA 2.1 jp); 1 Chome Komachi, Kamakura-shi, Kanagawa-ken 248-0006, Japan - panoramio (1).jpg (CC BY 3.0); Sony Building-4h.jpg (CC BY-SA 4.0); A hand reaches for a cup of coffee.jpg (CC BY 2.0), via Wikimedia Commons.</p></details></footer>
 <script>
-(function(){
- var cards=[].slice.call(document.querySelectorAll('.mcard'));
- function close(id,now){var d=document.getElementById('detail-'+id);d.classList.remove('open');document.querySelector('.menu').classList.remove('picked');if(now){d.hidden=true;return}setTimeout(function(){if(!d.classList.contains('open'))d.hidden=true},320);
-   document.querySelector('.mcard[data-course="'+id+'"]').setAttribute('aria-expanded','false')}
- function land(id){var d=document.getElementById('detail-'+id),done=false;function go(){if(done)return;done=true;d.scrollIntoView({behavior:'smooth',block:'start'})}
-   d.addEventListener('transitionend',function f(e){if(e.target===d){d.removeEventListener('transitionend',f);go()}});setTimeout(go,420)}
- var menuEl=document.querySelector('.menu');
- function point(id){var b=document.querySelector('.mcard[data-course="'+id+'"]'),d=document.getElementById('detail-'+id);
-   var r=b.getBoundingClientRect(),w=d.getBoundingClientRect();
-   d.style.setProperty('--arrow',(r.left+r.width/2-w.left)+'px')}
- function open_(id){var d=document.getElementById('detail-'+id);d.hidden=false;menuEl.classList.add('picked');
-   requestAnimationFrame(function(){d.classList.add('open');point(id)});
-   document.querySelector('.mcard[data-course="'+id+'"]').setAttribute('aria-expanded','true')}
- window.addEventListener('resize',function(){var o=document.querySelector('.mcard[aria-expanded=true]');if(o)point(o.dataset.course)});
- var want=(location.hash.match(/^#detail-([ABC])$/)||[])[1]||(location.search.match(/[?&]open=([ABC])/)||[])[1]||'C';
- if(want){open_(want);setTimeout(function(){document.getElementById('detail-'+want).scrollIntoView()},80)}
- cards.forEach(function(b){
-  b.addEventListener('click',function(){
-   var id=b.dataset.course,was=b.getAttribute('aria-expanded')==='true';
-   cards.forEach(function(o){if(o.getAttribute('aria-expanded')==='true')close(o.dataset.course,true)});
-   if(was)return;
-   open_(id);history.replaceState(null,'','#detail-'+id);
-   land(id);
-  });
- });
- document.querySelectorAll('.dclose').forEach(function(x){
-  x.addEventListener('click',function(){var d=x.closest('.detail'),id=d.id.replace('detail-','');close(id);
-   document.querySelector('.mcard[data-course="'+id+'"]').scrollIntoView({behavior:'smooth',block:'center'})});
- });
-})();
 
  (function(){
-  var sl=[].slice.call(document.querySelectorAll('.slides img')),dots=[].slice.call(document.querySelectorAll('.dots button')),lab=document.querySelector('.slabel'),i=0,t;
-  function show(n){i=n;sl.forEach(function(x,k){x.classList.toggle('on',k===n)});dots.forEach(function(x,k){x.classList.toggle('on',k===n)});
-   lab.textContent='Course '+sl[n].dataset.course+' · '+sl[n].dataset.name;lab.dataset.course=sl[n].dataset.course}
+  var sl=[].slice.call(document.querySelectorAll('.slides img')),dots=[].slice.call(document.querySelectorAll('.dots button')),i=0,t;
+  function show(n){i=n;sl.forEach(function(x,k){x.classList.toggle('on',k===n)});dots.forEach(function(x,k){x.classList.toggle('on',k===n)})}
   function go(){clearInterval(t);if(!matchMedia('(prefers-reduced-motion: reduce)').matches)t=setInterval(function(){show((i+1)%sl.length)},4000)}
   dots.forEach(function(d,k){d.addEventListener('click',function(){show(k);go()})});
-  lab.addEventListener('click',function(){document.querySelector('.mcard[data-course="'+lab.dataset.course+'"]').click()});
   show(0);go();
  })();
 
