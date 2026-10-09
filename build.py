@@ -18,21 +18,24 @@ def route_link(stops):
 COURSES = [
  dict(id='C', chips=['All on foot','Quiet side streets','Books and coffee'], name='Shibuya, Daikanyama & Nakameguro', tag='Downhill to the river',
   why='Start in the noise, then walk 20 minutes downhill into the quiet part: the Daikanyama bookshop, then the Meguro river and its cafés. Easy pace, good for talking.',
-  steps=[('13:00','Hachiko statue, Shibuya station','We meet at the dog.'),
-         ('13:15','Scramble crossing and Shibuya Stream','Cross once, then follow the river side of the station.'),
-         ('13:45','Walk to Daikanyama','20 minutes, mostly downhill, through a residential area.'),
-         ('14:10','Daikanyama T-Site and Log Road','Tsutaya Books, three buildings of books and a lounge. Log Road is a garden path on an old rail line with a brewery.'),
-         ('15:00','Late lunch or coffee','See the picks below. Ivy Place serves food all afternoon.'),
-         ('15:50','Walk to Nakameguro','15 minutes.'),
-         ('16:05','Meguro river','The cherry-tree street. Small shops and cafés on both banks.'),
-         ('16:45','Starbucks Reserve Roastery, and done','The big four-floor one by the river. We finish at Nakameguro station around 17:15.')],
-  stops=['Hachiko Statue Shibuya','Shibuya Stream','Daikanyama T-Site','Log Road Daikanyama','Nakameguro Station','Starbucks Reserve Roastery Tokyo'],
-  moves='Everything on foot, about 4 km in total. Shibuya → Daikanyama 20 min. Daikanyama → Nakameguro 15 min. Nakameguro station has the Hibiya and Toyoko lines.',
-  food=[('Ivy Place','Daikanyama · brunch','Pancakes, salads and pasta in the T-Site garden. Weekend queue, so we put our name down first.','Ivy Place Daikanyama'),
+  steps=[('12:00','Hachiko statue, Shibuya station','We meet at the dog.'),
+         ('12:10','Scramble crossing and Shibuya Stream','Cross once, then follow the river side of the station.'),
+         ('12:30','Walk to Daikanyama','20 minutes, mostly downhill, through a residential area.'),
+         ('12:50','Daikanyama T-Site and Log Road','Tsutaya Books, three buildings of books and a lounge. Log Road is a garden path on an old rail line with a brewery.'),
+         ('13:30','Lunch in Daikanyama','Ivy Place or Spring Valley Brewery. See the picks below.'),
+         ('14:30','Walk down to Nakameguro','15 minutes to the Meguro river.'),
+         ('14:45','Coffee by the river','Pick one of the four coffee spots below.'),
+         ('15:30','Nakameguro station, and done','The Hibiya line goes straight to Hibiya and Ginza.')],
+  stops=['Hachiko Statue Shibuya','Shibuya Stream','Daikanyama T-Site','Log Road Daikanyama','Nakameguro Station'],
+  moves='Everything on foot, about 3 km in total. Shibuya → Daikanyama 20 min. Daikanyama → Nakameguro 15 min. Nakameguro station has the Hibiya and Toyoko lines.',
+  food=[('Ivy Place','Daikanyama · lunch','Pancakes, salads and pasta in the T-Site garden. Weekend queue, so we put our name down first.','Ivy Place Daikanyama'),
         ('Spring Valley Brewery Tokyo','Daikanyama · craft beer','Kirin’s brewery restaurant on Log Road. Beer flight and a proper lunch.','Spring Valley Brewery Tokyo Daikanyama'),
-        ('Onibus Coffee Nakameguro','Nakameguro · coffee','Small roaster next to the tracks. Standing room, good beans.','Onibus Coffee Nakameguro')],
+        ('ONIBUS COFFEE Nakameguro','By the station · roaster','A small roaster right by the station. Upstairs seats look out over the Toyoko line trains.','ONIBUS COFFEE Nakameguro'),
+        ('Sidewalk Stand','On the river path · roaster','On the river path under the cherry trees. They roast beans and bake pastries on site.','Sidewalk Stand Nakameguro'),
+        ('SWELL Coffee Roasters','Kamimeguro · latte art','Run by a world latte art champion, in a quiet concrete building. Known for latte art and cheesecake.','SWELL COFFEE ROASTERS Nakameguro'),
+        ('Starbucks Reserve Roastery Tokyo','Upriver · four floors','The big four-floor roastery, about 10 minutes upriver.','Starbucks Reserve Roastery Tokyo')],
   good='Flat and easy the whole way, on quiet streets. Plenty of time to talk.',
-  mind='The Meguro river cherry trees are green in October, not pink. Ivy Place can have a short wait, so we put our name down when we arrive.',
+  mind='The Meguro river cherry trees are green in October, not pink. We finish at Nakameguro station at 15:30.',
   links=[('Daikanyama T-Site','https://store.tsite.jp/daikanyama/english/'),('Log Road Daikanyama','https://www.logroad-daikanyama.jp/'),('Starbucks Reserve Roastery Tokyo','https://www.starbucks.co.jp/reserve/roastery/')]),
 ]
 
@@ -40,10 +43,9 @@ def detail(c):
     ph = ''.join(f'<img src="{x["thumb"]}" alt="{html.escape(x["title"])}" loading="lazy">' for x in PH[c['id']]['detail'])
     st = ''.join(f'<li><b>{t}</b><div><strong>{h}</strong><span>{d}</span></div></li>' for t, h, d in c['steps'])
     fd = ''.join(f'<a class="eat" href="{gm(q)}" target="_blank" rel="noopener">'
-                 f'<img src="{im["thumb"]}" alt="{html.escape(im["title"])}" loading="lazy">'
-                 f'<span class="eb"><strong>{n}</strong><em>{a}</em><span>{d}</span>'
+                                  f'<span class="eb"><strong>{n}</strong><em>{a}</em><span>{d}</span>'
                  f'<i>Open in Google Maps ↗</i></span></a>'
-                 for (n, a, d, q), im in zip(c['food'], PH[c['id']]['food']))
+                 for (n, a, d, q) in c['food'])
     ln = ' '.join(f'<a href="{u}" target="_blank" rel="noopener">{html.escape(t)} ↗</a>' for t, u in c['links'])
     return f'''<section class="detail" id="detail-{c['id']}"><div class="dwrap"><div class="dtop"></div>
 <div class="dhead"><div><p class="kicker">{html.escape(c['tag'])}</p><h2>{html.escape(c['name'])}</h2></div></div>
@@ -54,7 +56,7 @@ def detail(c):
 <div><h3>The route</h3><div class="mapbox"><iframe src="{route_emb(c['stops'])}" loading="lazy" title="Route for course {c['id']}" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <p class="moves">{c['moves']} <a href="{route_link(c['stops'])}" target="_blank" rel="noopener">Open the route in Google Maps ↗</a></p></div>
 </div>
-<h3>Where we eat</h3><div class="eats">{fd}</div>
+<h3>Lunch and coffee</h3><div class="eats">{fd}</div>
 <div class="notes"><p><b>Good for</b> {html.escape(c['good'])}</p><p><b>Keep in mind</b> {html.escape(c['mind'])}</p></div>
 <p class="links">{ln}</p>
 </div></section>'''
@@ -170,21 +172,21 @@ footer.wrap{{padding:26px 20px 60px;font-size:13px;color:var(--mute);border-top:
 <div class="wrap hcap">
 <p class="kicker">Tokyo · Friday, October 9</p>
 <h1>Downhill to <span class="nb">the river.</span></h1>
-<p class="fixed">Friday October 9, 13:00 at the Hachiko statue.</p>
+<p class="fixed">Friday October 9, 12:00 at the Hachiko statue.</p>
 <div class="snav"><div class="dots">{''.join(f'<button type="button" aria-label="Photo {k+1}"></button>' for k in range(3))}</div></div>
 </div></div>
 <div class="wrap hbody">
 <p>About four hours on foot, from the crossing down to the Meguro river.</p>
-<ul class="facts"><li><b>With</b> Yuuki</li><li><b>Day</b> Friday, October 9</li><li><b>Time</b> 13:00 to about 17:15</li><li><b>Start</b> Hachiko statue, Shibuya</li></ul>
+<ul class="facts"><li><b>With</b> Yuuki</li><li><b>Day</b> Friday, October 9</li><li><b>Time</b> 12:00 to 15:30</li><li><b>Start</b> Hachiko statue, Shibuya</li></ul>
 </div>
 </header>
 <div class="wrap">
-<div class="sechead"><span class="n">1</span><div><b>The plan</b> <span>Friday October 9, 13:00 to about 17:15.</span></div></div>
+<div class="sechead"><span class="n">1</span><div><b>The plan</b> <span>Friday October 9, 12:00 to 15:30.</span></div></div>
 {''.join(detail(c) for c in COURSES)}
 <div class="sechead"><span class="n">2</span><div><b>Where we meet</b> <span>Hachiko statue, Hachiko exit of Shibuya station.</span></div></div>
 <div class="arrival">
 <div><p>Every train line stops at Shibuya, so the statue is the easiest place to find each other.</p>
-<p class="hint">If your hotel is near Shibuya, tell me the name and I will come to the lobby instead. The 13:00 start can move if your morning runs long.</p></div>
+<p class="hint">If your hotel is near Shibuya, tell me the name and I will come to the lobby instead. The 12:00 start can move if your morning runs long.</p></div>
 <div class="mapbox"><iframe src="{emb('Hachiko Statue Shibuya')}" loading="lazy" title="Hachiko statue, Shibuya" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </div>
 </div>
